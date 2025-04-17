@@ -1,40 +1,34 @@
-import { useState, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { searchGithub, searchGithubUser } from '../api/API';
 import Candidate from '../interfaces/Candidate.interface';
 
 const CandidateSearch = () => {
   const [candidate, setCandidate] = useState<Candidate>({} as Candidate)
-  const [potentalCandidates, setPotentalCandidates] = useState<Candidate[]>([])
 
-  useEffect(() => {
-
-    const getCandidates = async () => {
-      const candidates: Candidate[] = await searchGithub()
-
-      setPotentalCandidates(candidates)
-
-      const renderCandidate = async () => {
-        const focusedCandidate: Candidate | undefined = potentalCandidates.pop()
-
-        if (focusedCandidate) {
-          const userData = await searchGithubUser(focusedCandidate.login)
-          setCandidate(userData)
-        }
-      }
-      await renderCandidate()
-    }
-    getCandidates()
-  }, [])
-
+  const candidatesArray = useRef<Candidate[]>([])
+  
   const nextCandidate = async () => {
-    const next: Candidate | undefined = potentalCandidates.pop()
+    const next: Candidate | undefined = candidatesArray.current.pop()
 
     if (next) {
       const userData = await searchGithubUser(next.login)
       setCandidate(userData)
+      console.log(userData)
     }
   }
 
+  useEffect(() => {
+    const getCandidates = async () => {
+      const candidates: Candidate[] = await searchGithub()
+
+      candidatesArray.current = [...candidates]
+
+      await nextCandidate()
+    }
+    getCandidates()
+  }, [])
+  
+  
   const saveCandidate = async () => {
     const savedCandiates: Candidate[] = JSON.parse(localStorage.getItem('Candidates') || '[]')
 
@@ -45,13 +39,11 @@ const CandidateSearch = () => {
     nextCandidate()
   }
 
-  console.log(candidate)
-
   return (
     <>
       <h1>Candidate Search</h1>
 
-      {potentalCandidates.length > 0 ? (
+      {candidatesArray.current.length > 0 ? (
         <div className='card'>
           <div className='image-box'>
             <img src={candidate.avatar_url} alt={`User image for ${candidate.login}`} />
