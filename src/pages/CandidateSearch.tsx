@@ -13,7 +13,6 @@ const CandidateSearch = () => {
     if (next) {
       const userData = await searchGithubUser(next.login)
       setCandidate(userData)
-      console.log(userData)
     }
   }
 
