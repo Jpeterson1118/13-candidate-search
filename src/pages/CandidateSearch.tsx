@@ -68,4 +68,4 @@ const CandidateSearch = () => {
   )
 }
 
-export default CandidateSearch;
+export default CandidateSearch

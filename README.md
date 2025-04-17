@@ -1,33 +1,56 @@
-# React + TypeScript + Vite
+# README
+  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0);
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  ## Description
 
-Currently, two official plugins are available:
+  A web app aimed at helping employers find promising software engineers by searching GitHub and presenting candidates who can either be rejected or saved into a short-list. On the short-list page the candidates and be further reviewed and either kept or rejected.
 
-* [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md), which uses [Babel](https://babeljs.io/) for Fast Refresh
-* [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc), which uses [SWC](https://swc.rs/) for Fast Refresh
+  [![Candidate Search](/13-candidate-search/src/assets/candidate-search.png)]
+  [![Saved Candidates](/13-candidate-search/src/assets/potential-candidates.png)]
 
-## Expanding the ESLint configuration
+  ## Table of Contents
 
-If you're developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+  - [Installation](#installation})
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [tests](#tests)
+  - [Questions](#questions)
 
-* Configure the top-level `parserOptions` property as follows:
+  ## Installation
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+  N/A
 
-* Replace `plugin:@typescript-eslint/recommended` with `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`.
-* Optionally, add `plugin:@typescript-eslint/stylistic-type-checked`.
-* Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` and `plugin:react/jsx-runtime` to the `extends` list.
+  ## Usage
+  Navigate to the web page and use the buttons provided to eitehr save or reject candidates. Use the nav liks to navigate between pages.
 
----
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+  ## Apache 2.0 License
+
+  Copyright [yyyy] [name of copyright owner]
+
+        Licensed under the Apache License, Version 2.0 (the "License");
+        you may not use this file except in compliance with the License.
+        You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+        Unless required by applicable law or agreed to in writing, software
+        distributed under the License is distributed on an "AS IS" BASIS,
+        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        See the License for the specific language governing permissions and
+        limitations under the License.
+
+  https://www.apache.org/licenses/LICENSE-2.0
+
+  ## Contributing
+
+  N/A
+
+  ## Tests
+
+  N/A
+
+  ## Questions
+
+  For questions please contact us at https://github.com/Jpeterson1118 or at peterson.jacob13@protonmail.com.
+
