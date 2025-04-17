@@ -5,8 +5,8 @@
 
   A web app aimed at helping employers find promising software engineers by searching GitHub and presenting candidates who can either be rejected or saved into a short-list. On the short-list page the candidates and be further reviewed and either kept or rejected.
 
-  [![Candidate Search](/13-candidate-search/src/assets/candidate-search.png)]
-  [![Saved Candidates](/13-candidate-search/src/assets/potential-candidates.png)]
+  [![Candidate Search](/src/assets/candidate-search.png)]
+  [![Saved Candidates](/src/assets/potential-candidates.png)]
 
   ## Table of Contents
 
