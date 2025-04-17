@@ -5,8 +5,6 @@
 
   A web app aimed at helping employers find promising software engineers by searching GitHub and presenting candidates who can either be rejected or saved into a short-list. On the short-list page the candidates and be further reviewed and either kept or rejected.
 
-  [![Candidate Search](/src/assets/candidate-search.png)]
-  [![Saved Candidates](/src/assets/potential-candidates.png)]
 
   ## Table of Contents
 
@@ -22,7 +20,17 @@
   N/A
 
   ## Usage
+  [![Live Site](https://candidate-search-6q5k.onrender.com/)]
+
   Navigate to the web page and use the buttons provided to eitehr save or reject candidates. Use the nav liks to navigate between pages.
+  
+  [![Candidate Search](/src/assets/candidate-search.png)]
+  
+  On the candidate search page use the red and green buttons to either save or reject candidates.
+
+  [![Saved Candidates](/src/assets/potential-candidates.png)]
+
+  On the saved candidates page you can use the red button to reject and delete candidates from your list of saved candidates.
 
   ## Apache 2.0 License
 
