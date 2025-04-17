@@ -177,8 +177,8 @@ tbody tr:nth-child(odd) {
 }
 
 .candidate-image{
-  border: white solid;
-  width: 50%;
+  border: white solid 2px;
+  width: 60%;
   border-radius: 10px;
 }
 
