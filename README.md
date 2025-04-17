@@ -20,7 +20,7 @@
   N/A
 
   ## Usage
-  [![Live Site](https://candidate-search-6q5k.onrender.com/)]
+  [[Live Site](https://candidate-search-6q5k.onrender.com/)]
 
   Navigate to the web page and use the buttons provided to eitehr save or reject candidates. Use the nav liks to navigate between pages.
   
